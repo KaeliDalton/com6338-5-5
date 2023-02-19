@@ -12,7 +12,14 @@ form.onsubmit = function(e){
         form.reset()
         return
         }else{
-          
+            //add item to list
+            var li = document.createElement("li")
+            //item must be button nested in li
+            var btn = document.createElement("button")
+            btn.textContent = inputValue;
+            list.appendChild(li)
+            li.appendChild(btn)
+            
             //reset input to empty
             input.value = ""
         } 
