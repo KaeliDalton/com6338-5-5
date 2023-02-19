@@ -22,7 +22,7 @@ form.onsubmit = function(e){
             //when item clicked once, strikethrough, when item clicked twice, remove
             btn.addEventListener('click', function handleClick(e){
                 if(this.style.textDecoration == "line-through"){
-                    this.parentElement.remove()
+                    this.parentNode.remove()
                 }else{
                     this.style.textDecoration = "line-through"
                 }
