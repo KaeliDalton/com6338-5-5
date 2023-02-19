@@ -7,6 +7,14 @@ var input = document.querySelector('input')
 form.onsubmit = function(e){
     e.preventDefault()
     var inputValue = document.querySelector('input').value
-    
+    //prevent spaces or blanks from adding to list
+    if(inputValue == "" || inputValue.trim().length === 0){
+        form.reset()
+        return
+        }else{
+          
+            //reset input to empty
+            input.value = ""
+        } 
 }
 
